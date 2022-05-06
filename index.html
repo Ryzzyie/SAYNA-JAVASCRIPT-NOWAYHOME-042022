@@ -10,7 +10,8 @@
     />
     <link rel="stylesheet" href="./assets/css/adversaires.css">
     <link rel="stylesheet" href="./assets/css/index.css">
-    <script src="./scripts/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!--<script src="./scripts/jquery-3.6.0.js"></script>-->
     <title>Spiderman - Accueil</title>
 </head>
 
@@ -27,10 +28,10 @@
                 </div>
                 <div class="menu">
                     <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="adversaires.html">Adversaires</a></li>
-                        <li><a href="heros.html">Héros</a></li>
-                        <li><a href="apropos.html">A propos</a></li>
+                        <li><a href="index.html" class="lienMenu">Accueil</a></li>
+                        <li><a href="adversaires.html" class="lienMenu">Adversaires</a></li>
+                        <li><a href="heros.html" class="lienMenu">Héros</a></li>
+                        <li><a href="apropos.html" class="lienMenu">A propos</a></li>
                     </ul>
                 </div>
             </div>
@@ -52,10 +53,9 @@
             </div>
             <div class="conteneur box">
                 <h1 class="titre">SPIDERMAN</h1>
-                <p id="para"></p>
                 <div class="cta mt-5">
-                    <button type="button" class="btn button1 me-5 ">Voir les héros</button>
-                    <button type="button" class="btn button2" id="btn" onmouseenter="myFunction()" onmouseleave="myFunction2()">Voir les adversaires</button>
+                    <button type="button" class="btn button1 me-5 btnAdversaire">Voir les héros</button>
+                    <button type="button" class="btn button2">Voir les adversaires</button>
                 </div>
                 <p class="description">L’araignée sympa du quartier!</p>
                 <div class="audio-timer row">
@@ -82,7 +82,7 @@
                             <p class="card-text">Trois films Spiderman sont sortis en 2002, 2004 et 2007. Ils sont produits par Columbia Pictures et Spiderman est incarné par Tobey Maguire. Un quatrième était prévu, mais sera finalement annulé suite à des désaccords entre
                                 Sam Raimi (le réalisateur) et Sony. Cette première trilogie a connu un grand succès auprès des fans et du grand public. L’épisode 3 reste à ce jour un des films les plus chers de l’histoire du cinéma.
                             </p>
-                            <button type="button" class="btn button1">Voir ses adversaires</button>
+                            <button type="button" class="btn button1 btnAdversaire">Voir ses adversaires</button>
                         </div>
                     </div>
                     <div class="col-md-4 card-unique">
@@ -92,7 +92,7 @@
                                 très mitigées. Un troisième et quatrième film étaient prévus pour 2016 et 2018. Finalement, Marvel et Sony trouvent un accord pour introduire Spiderman dans l'Univers cinématographique Marvel et abandonne ainsi The Amazing
                                 Spider-Man.
                             </p>
-                            <button type="button" class="btn button1">Voir ses adversaires</button>
+                            <button type="button" class="btn button1 btnAdversaire">Voir ses adversaires</button>
                         </div>
                     </div>
                     <div class="col-md-4 card-unique">
@@ -106,7 +106,7 @@
                                 </ul>
                                 Le héro est également présent dans Avengers Infinity War et Avengers End Game, combattant au côté des Avengers.
                             </p>
-                            <button type="button" class="btn button1">Voir ses adversaires</button>
+                            <button type="button" class="btn button1 btnAdversaire">Voir ses adversaires</button>
                         </div>
                     </div>
                 </div>
@@ -166,9 +166,9 @@
         <div class="conteneur footer">
             <div class="navigation-footer">
                 <ul class="list1">
-                    <li><a href="#">Mobile app</a></li>
-                    <li><a href="#">Politique de confidentialite</a></li>
-                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#" class="lienMenu">Mobile app</a></li>
+                    <li><a href="#" class="lienMenu">Politique de confidentialite</a></li>
+                    <li><a href="#" class="lienMenu">Cookies</a></li>
                 </ul>
                 <div class="brand">
                     <a href="#">
@@ -178,8 +178,8 @@
                     </a>
                 </div>
                 <ul class="list2">
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="#" class="lienMenu">Contact</a></li>
+                    <li><a href="#" class="lienMenu">Blog</a></li>
                     <li><select class="formselect">
                         <option selected="">Langue</option>
                         <option>Francais</option>
@@ -190,10 +190,10 @@
                 </ul>
             </div>
             <div class="media">
-                <img src="./assets/logo/logof.png" alt="">
-                <img src="./assets/logo/logoi.png" alt="">
-                <img src="./assets/logo/logot.png" alt="">
-                <img src="./assets/logo/logoy.png" alt="">
+                <i class="fa-brands fa-facebook-f fa-2x icone-footer"></i>
+                <i class="fa-brands fa-instagram fa-2x icone-footer"></i>
+                <i class="fa-brands fa-twitter fa-2x icone-footer"></i>
+                <i class="fa-brands fa-youtube fa-2x icone-footer"></i>
             </div>
             <div class="copyright">
                 <p>&copy;SaynaXMarvel, Inc 2022. We love our users</p>
